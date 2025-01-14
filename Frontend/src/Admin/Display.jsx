@@ -8,7 +8,8 @@ const Display = () => {
   const [mydata , setMydata] = useState([]);
 
   const loaddata=()=>{
-    let api= "http://localhost:8000/employer/datadisplay";
+    // let api= "http://localhost:8000/employer/datadisplay";
+    let api="project-3a8aecjcp-aditya-jains-projects-5a54a759.vercel.app"
     axios.get(api).then((res)=>{
       setMydata(res.data);
       console.log(res.data);

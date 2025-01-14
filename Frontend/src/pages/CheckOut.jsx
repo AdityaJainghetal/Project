@@ -22,7 +22,8 @@ const CheckOut = () => {
     const handlePay = async () => {
         setLoader(true)
         try {
-            const orderURL = "http://localhost:8000/api/payment/orders";
+            // const orderURL = "http://localhost:8000/api/payment/orders";
+            const orderURL =  "project-3a8aecjcp-aditya-jains-projects-5a54a759.vercel.app"
             const { data } = await axios.post(orderURL, { amount: totalAmount, productitems: productDetails, ...input });
             setLoader(false)
             initPay(data.data);

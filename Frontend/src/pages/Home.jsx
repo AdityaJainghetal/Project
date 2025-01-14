@@ -20,7 +20,8 @@ const Home = () => {
   const loadData = async () => {
     
       // const api = "http://localhost:3000/components";
-      const api= "http://localhost:8000/employer/datadisplay"
+      // const api= "http://localhost:8000/employer/datadisplay"
+      const api= "project-3a8aecjcp-aditya-jains-projects-5a54a759.vercel.app"
       const res = await axios.get(api);
       setData(res.data);
    

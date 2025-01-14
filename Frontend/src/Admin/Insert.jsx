@@ -27,7 +27,8 @@ const Insert = () => {
       return;
     }
 
-    const api = "http://localhost:8000/employer/datasave";
+    // const api = "http://localhost:8000/employer/datasave";
+    const api ="project-3a8aecjcp-aditya-jains-projects-5a54a759.vercel.app"
     const data = new FormData();
 
     data.append('file', img); 

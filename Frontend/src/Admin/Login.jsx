@@ -19,7 +19,8 @@ const Login = () => {
 
    const handleSubmit=(e)=>{
     e.preventDefault();
-    let api="http://localhost:8000/users/usercheck";
+    // let api="http://localhost:8000/users/usercheck";
+    let api= "project-3a8aecjcp-aditya-jains-projects-5a54a759.vercel.app"
     axios.post(api, input).then((res)=>{
                 console.log(res.data.Data[0].name)
                 console.log(res.data.Data[0].email)

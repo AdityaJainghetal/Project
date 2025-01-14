@@ -19,7 +19,8 @@ const Registration = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const api = "http://localhost:8000/users/registration";
+    // const api = "http://localhost:8000/users/registration";
+    const api= "project-3a8aecjcp-aditya-jains-projects-5a54a759.vercel.app"
 
     try {
       const res = await axios.post(api, input);

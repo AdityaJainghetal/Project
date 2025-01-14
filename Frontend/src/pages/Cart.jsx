@@ -26,7 +26,8 @@ const MyCart=()=>{
         order_id: data.id,
         handler: async (response) => {
           try {
-            const verifyURL = "https://localhost:8000/api/payment/verify";
+            // const verifyURL = "https://localhost:8000/api/payment/verify";
+            const verify= "project-3a8aecjcp-aditya-jains-projects-5a54a759.vercel.app"
             const {data} = await axios.post(verifyURL,response);
           } catch(error) {
             console.log(error);
